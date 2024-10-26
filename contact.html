@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt - Cybersikkerhet for Nybegynnere</title>
+    <title>Kontakt Oss – Cybersikkerhet for Nybegynnere</title>
     <meta name="description" content="Kontakt oss for spørsmål og veiledning innen cybersikkerhet for nybegynnere.">
+    <meta name="keywords" content="cybersikkerhet, kontakt, nybegynnere, support, veiledning">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
         <img src="header.webp" alt="Cybersikkerhet header" class="header-image">
     </header>
 
-    <main>
+    <main role="main">
         <section>
             <h2>Kontaktinformasjon</h2>
             <p>Har du spørsmål om cybersikkerhet? Ta kontakt med oss via e-post eller våre sosiale medier.</p>
@@ -32,15 +33,16 @@
         <section>
             <h2>Send oss en melding</h2>
             <div class="contact-form-box">
-                <form action="#" method="post">
+                <form action="#" method="post" aria-labelledby="form-header">
+                    <p id="form-header" hidden>Kontakt oss ved å fylle ut dette skjemaet</p>
                     <label for="name">Navn:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required aria-required="true">
 
                     <label for="email">E-post:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required aria-required="true">
 
                     <label for="message">Melding:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
 
                     <button type="submit">Send Melding</button>
                 </form>
