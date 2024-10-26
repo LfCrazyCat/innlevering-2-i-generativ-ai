@@ -1,0 +1,77 @@
+/* Reset for konsistens */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Struktur og layout */
+header, footer {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header h1, footer p {
+  margin-bottom: 0.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+
+/* Tilgjengelighet og WCAG */
+a:focus, button:focus {
+  outline: 3px solid #005fcc; /* Høy kontrast på fokus */
+}
+
+/* Responsivt design */
+@media (max-width: 600px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  main {
+      padding: 1em;
+  }
+}
