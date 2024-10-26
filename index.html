@@ -19,11 +19,12 @@
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
         </nav>
+        <img src="header.webp" alt="Cybersikkerhet header" class="header-image">
     </header>
 
     <main>
-        <!-- Hjem seksjon -->
-        <section id="home">
+        <!-- Velkomstseksjon -->
+        <section id="welcome">
             <h2>Velkommen til Cybersikkerhet for Nybegynnere</h2>
             <p>Her finner du enkle og nyttige tips for å forbedre din sikkerhet på nettet. Vi er dedikert til å hjelpe nybegynnere med å forstå hvordan de kan beskytte seg mot vanlige sikkerhetstrusler.</p>
             <p>Utforsk våre ressurser:</p>
@@ -32,6 +33,16 @@
                 <li><a href="tips.html">Få nyttige sikkerhetstips</a></li>
                 <li><a href="contact.html">Ta kontakt med oss for veiledning</a></li>
             </ul>
+        </section>
+
+        <!-- Lydavspillerseksjon -->
+        <section id="audio-player">
+            <h3>Spill av vår introduksjonssang</h3>
+            <div class="audio-controls">
+                <audio id="cyber-audio" src="Cybersecurity 101.wav"></audio>
+                <button onclick="document.getElementById('cyber-audio').play()">Start</button>
+                <button onclick="document.getElementById('cyber-audio').pause()">Stopp</button>
+            </div>
         </section>
     </main>
 
